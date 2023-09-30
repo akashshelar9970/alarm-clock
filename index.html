@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timer App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="timer-input">
+        <input type="number" id="hours" min="0" max="23" placeholder="H">
+        <input type="number" id="minutes" min="0" max="59" placeholder="M">
+        <input type="number" id="seconds" min="0" max="59" placeholder="S">
+        <button id="start-timer">Start New Timer</button>
+    </section>
+    
+    <section class="active-timers" id="active-timers">
+        <!-- Timer displays will be dynamically added here -->
+    </section>
+    
+    <section class="timer-end" style="display: none;">
+        <p>Timer Ended!</p>
+        <audio id="audio" src="alert.mp3"></audio>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
